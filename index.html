@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert text to speech with customizable voices, pitch, and rate controls">
+    <meta name="keywords" content="text to speech, speech synthesis, voice converter">
+    <meta name="author" content="Your Name">
+    <title>Text to Speech Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+    <div class="container">
+        <div class="app-container">
+            <div class="headings-container">
+                <h1>Text to Speech Converter</h1>
+                <h3>Enter text, customize, and convert to speech</h3>
+            </div>
+
+            <div class="interaction-container">
+                <textarea id="textToConvert" placeholder="Enter text to convert..." cols="35" rows="3" class="text-control"></textarea>
+                
+                <p id="charCount">Characters: 0</p>
+
+                <div class="voice-settings">
+                    <label for="voiceSelect">Select Voice:</label>
+                    <select id="voiceSelect" class="voice-control">
+                        <option value="">Loading voices...</option>
+                    </select>
+
+                    <div class="slider-container">
+                        <label for="pitch">Pitch:</label>
+                        <input type="range" id="pitch" min="0" max="2" step="0.1" value="1">
+                        <span id="pitchValue">1</span>
+                    </div>
+
+                    <div class="slider-container">
+                        <label for="rate">Rate:</label>
+                        <input type="range" id="rate" min="0.5" max="2" step="0.1" value="1">
+                        <span id="rateValue">1</span>
+                    </div>
+                </div>
+
+                <p class="error-para" id="errorMsg"></p>
+
+                <div class="button-container">
+                    <button class="btn" id="convertBtn">
+                        <span class="btn-icon">🔊</span>
+                        Play
+                    </button>
+                    <button class="btn pause-btn" id="pauseBtn" disabled>
+                        <span class="btn-icon">⏯️</span>
+                        Pause
+                    </button>
+                    <button class="btn clear-btn" id="clearBtn">
+                        <span class="btn-icon">🗑️</span>
+                        Clear
+                    </button>
+                </div>
+            </div>
+
+            <div class="loading">
+                <svg class="loading-svg" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" stroke="currentColor" fill="none" stroke-width="8" />
+                </svg>
+                <p>Converting...</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="app-footer">
+        <p>Made with ❤️ by Your Name</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
