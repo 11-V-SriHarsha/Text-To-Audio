@@ -15,7 +15,8 @@ body {
     justify-content: center;
     align-items: center;
     color: #2d3436;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 @keyframes gradientBG {
@@ -34,6 +35,9 @@ body.dark-mode {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .app-container {
@@ -49,6 +53,7 @@ body.dark-mode {
     transform: translateY(0);
     transition: all 0.3s ease;
     overflow: hidden;
+    margin: auto;
 }
 
 .dark-mode .app-container {
