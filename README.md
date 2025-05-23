@@ -28,6 +28,31 @@ A web application that converts text to speech with customizable voice, pitch, a
 5. Use 'Pause/Resume' to control playback
 6. Click 'Clear' to reset
 
+## Installation and Running
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/11-V-SriHarsha/Text-To-Audio.git
+   cd Text-To-Audio
+   ```
+
+2. Running the app:
+   - Double click the `index.html` file, or
+   - Use a local server:
+     ```bash
+     # Using Python
+     python -m http.server 8000
+     # OR using Node.js's http-server
+     npx http-server
+     ```
+   - Open your browser and navigate to:
+     - If using Python: `http://localhost:8000`
+     - If using http-server: `http://localhost:8080`
+
+3. Browser Support:
+   - Make sure you're using a modern browser (Chrome recommended)
+   - Allow microphone permissions if prompted
+
 ## Browser Compatibility
 
 Works best in modern browsers that support the Web Speech API:

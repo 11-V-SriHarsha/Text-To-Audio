@@ -1,4 +1,3 @@
-// Check browser compatibility
 if (!('speechSynthesis' in window)) {
     document.body.innerHTML = '<div style="text-align: center; padding: 20px; color: red;">Sorry, your browser does not support the Web Speech API. Please try using a modern browser like Chrome, Edge, or Firefox.</div>';
 }
